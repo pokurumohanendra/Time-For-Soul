@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Time For Soul
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React packing-list app for trips. Add items with a quantity, tick them off as you pack, and see how far along you are.
 
-## Available Scripts
+**Live demo:** [enjoy-your-trip.netlify.app](https://enjoy-your-trip.netlify.app/)
 
-In the project directory, you can run:
+![Time For Soul packing list](https://raw.githubusercontent.com/pokurumohanendra/My-Portfolio/main/public/projects/enjoy-your-trip.jpg)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Add items with a description and a quantity from 1 to 20
+- Mark items as packed (they are struck through) or delete them
+- Sort by input order, description or packed status
+- Clear the whole list
+- Footer statistics: items listed, items packed and the percentage packed
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech stack
 
-### `npm test`
+React with hooks, Create React App.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting started
 
-### `npm run build`
+You need Node.js (LTS).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Script | What it does |
+|--------|--------------|
+| `npm start` | Run the development server |
+| `npm run build` | Create a production build |
+| `npm test` | Run the tests |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project structure
 
-### `npm run eject`
+```
+src/Components/
+├── App.js          owns the list state
+├── Logo.js
+├── Form.js         add-item form (controlled inputs)
+├── PackingList.js  list and sorting
+├── Item.js         one item
+└── Stats.js        derived statistics
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## About
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Built as a learning project to practise lifting state up, controlled forms, rendering lists and deriving values from state.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Author
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Pokuru Mohanendra](https://github.com/pokurumohanendra) · [LinkedIn](https://www.linkedin.com/in/pokuru-mohanendra/)
